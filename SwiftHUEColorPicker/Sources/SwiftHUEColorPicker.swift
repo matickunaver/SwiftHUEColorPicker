@@ -128,7 +128,7 @@ open class SwiftHUEColorPicker: UIView {
 					UIColor(hue: hueValue, saturation: 1.0, brightness: CGFloat(CGFloat(x) / size.width), alpha: 1.0).set()
 					break
 				case .alpha:
-					UIColor(hue: hueValue, saturation: 1.0, brightness: 1.0, alpha: CGFloat(CGFloat(x) / size.width)).set()
+					UIColor.white.withAlphaComponent(CGFloat(CGFloat(x) / size.width)).set()
 					break
 				}
 				
